@@ -1,2 +1,29 @@
-# book-folder-organizer
- Book Folder Organizer – A Python script to automatically regroup book folders into sets of 50 while preserving folder names and numerical order. Uses shutil.move() for efficient reorganization.  🔹 Features: ✅ Sorts folders numerically (page1, page2, ..., page10, page11) ✅ Groups folders into batches of 50 
+# 📂 Book Folder Grouper
+
+This Python script organizes a large collection of book folders by grouping them into sets of 50. It's especially useful for managing datasets with hundreds or thousands of foldered items by making navigation and batch processing more manageable.
+
+## 🚀 Features
+
+- Automatically detects and sorts book folders by number.
+- Groups folders into directories containing 50 books each.
+- Maintains original folder names.
+- Displays progress for each group created.
+- Moves folders instead of copying (to save disk space and improve performance).
+
+## 📁 Example Directory Structure
+
+
+## 🧰 Requirements
+
+- Python 3.x
+- Standard Library only (`os`, `shutil`)
+
+## ⚙️ Configuration
+
+### 1. Set your dataset path
+
+Edit this line in the script:
+
+```python
+dataset_dir = "your path"
+
